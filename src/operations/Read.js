@@ -8,7 +8,7 @@ export const Read = () => {
 
   const getData=async()=>{
     try{
-      const response= await axios.get("http://localhost:4433/api/v1/employee") 
+      const response= await axios.get("https://cud-bend.onrender.com/api/v1/employee") 
       setData(response.data)
     }catch(err){
       console.log(err.message);
@@ -17,7 +17,7 @@ export const Read = () => {
   }
   const handleDelete=async(id)=>{
     try{
-      await axios.delete(`http://localhost:4433/api/v1/employee/${id}`)
+      await axios.delete(`https://cud-bend.onrender.com/api/v1/employee/${id}`)
       getData();
     }
     catch(error){

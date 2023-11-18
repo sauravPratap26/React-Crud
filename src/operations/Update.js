@@ -14,7 +14,7 @@ export const Update = () => {
   const handleUpdate=async(e)=>{
     e.preventDefault();
     try{
-      await axios.put(`http://localhost:4433/api/v1/employee/${id}`,{ename,email,emobile})
+      await axios.put(`https://cud-bend.onrender.com/api/v1/employee/${id}`,{ename,email,emobile})
       
       history("/")
     }

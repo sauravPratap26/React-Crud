@@ -13,7 +13,7 @@ const history=useNavigate();
 const handleSubmit=async(e)=>{
   e.preventDefault();
   try{
-    await axios.post("http://localhost:4433/api/v1/employee",{ ename,email,emobile})
+    await axios.post("https://cud-bend.onrender.com/api/v1/employee",{ ename,email,emobile})
  history("/")
   }
   catch(error) {
